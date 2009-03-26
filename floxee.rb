@@ -100,15 +100,15 @@ Compass.configure_sass_plugin!
 CODE
 
 file 'app/stylesheets/ie.sass', <<-END
-  # IE specific styles here
+# IE specific styles here
 END
 
 file 'app/stylesheets/print.sass', <<-END
-  # print specific styles here
+# print specific styles here
 END
 
 file 'app/stylesheets/screen.sass', <<-END
-  # app styles here
+# app styles here
 END
 
 run "mkdir -p public/stylesheets/compiled/floxee"
