@@ -100,15 +100,17 @@ Compass.configure_sass_plugin!
 CODE
 
 file 'app/stylesheets/ie.sass', <<-END
-# IE specific styles here
+// IE specific styles here
 END
 
 file 'app/stylesheets/print.sass', <<-END
-# print specific styles here
+// print specific styles here
 END
 
 file 'app/stylesheets/screen.sass', <<-END
-# app styles here
+@import ../../vendor/plugins/floxee/app/stylesheets/screen.sass
+
+// app styles here
 END
 
 run "mkdir -p public/stylesheets/compiled/floxee"
@@ -127,6 +129,7 @@ YAML
 generate("twitter_auth", "--oauth")
 
 run "rake floxee:sync "
+run "rake floxee:bootstrap"
 
 # Commit all work so far to the repository
 git :add => '.'
