@@ -88,17 +88,6 @@ end
 Compass.configure_sass_plugin!
 CODE
 
-initializer 'floxee.rb', <<-CODE
-require 'compass'
-# If you have any compass plugins, require them here.
-Compass.configuration do |config|
-  config.project_path = RAILS_ROOT
-  config.sass_dir = "vendor/plugins/app/stylesheets"
-  config.css_dir = "public/stylesheets/compiled"
-end
-Compass.configure_sass_plugin!
-CODE
-
 file 'app/stylesheets/ie.sass', <<-END
 // IE specific styles here
 END
