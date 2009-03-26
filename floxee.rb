@@ -55,7 +55,7 @@ plugin 'cucumber', :git => "git://github.com/aslakhellesoy/cucumber.git"
 
 
 # Install all gems
-gem 'twitter'
+gem 'twitter', :version => '~> 0.4.2', :source => 'http://gems.github.com'
 gem 'rsl-stringex', :lib => "stringex", :source => "http://gems.github.com"
 gem 'mislav-will_paginate', :version => '~> 2.3.6', :lib => 'will_paginate', :source => 'http://gems.github.com'
 gem 'jchris-couchrest', :lib => 'couchrest', :version => '~> 0.22', :source => "http://gems.github.com"
