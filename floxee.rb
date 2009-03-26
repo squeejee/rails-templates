@@ -129,7 +129,7 @@ YAML
 generate("twitter_auth", "--oauth")
 
 run "rake floxee:sync "
-run "rake floxee:bootstrap"
+#run "rake floxee:bootstrap"
 
 # Commit all work so far to the repository
 git :add => '.'
