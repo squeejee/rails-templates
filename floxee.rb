@@ -116,6 +116,7 @@ YAML
 
 # Set up user model and run migrations
 generate("twitter_auth", "--oauth")
+generate(:migration, 'add_admin_to_user admin:boolean')
 
 run "rake floxee:sync "
 #run "rake floxee:bootstrap"
